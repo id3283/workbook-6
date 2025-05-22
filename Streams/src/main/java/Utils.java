@@ -25,7 +25,7 @@ public class Utils {
             "Kevin", "Laura", "Michael", "Nina", "Oscar", "Paula", "Quentin", "Rachel", "Simon", "Tina",
             "Umar", "Vera", "Will", "Xena", "Yasir", "Zara", "Amber", "Blake", "Carmen", "Derek",
             "Elena", "Frank", "Gina", "Harold", "Irene", "Jack", "Kara", "Liam", "Mona", "Nate",
-            "Olive", "Peter", "Queenie", "Ralph", "Sasha", "Trent", "Una", "Violet", "Wade", "Yolanda"
+            "Olive", "Ian", "Queenie", "Ralph", "Sasha", "Trent", "Una", "Violet", "Wade", "Yolanda"
     };
 
     private static final String[] LAST_NAMES = {

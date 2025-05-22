@@ -1,3 +1,5 @@
+import java.time.Duration;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,6 +12,7 @@ public class Main {
         System.out.println("Enter name to search for (first or last): ");
         String searchName = scanner.nextLine();
 
+        LocalTime start = LocalTime.now();
         ArrayList<Person> matches = new ArrayList<>();
 
         double sumOfAges = 0;
@@ -31,6 +34,9 @@ public class Main {
         }
 
         double averageAge = sumOfAges / people.size();
+
+        LocalTime end = LocalTime.now();
+        System.out.println("Processing time: " + Duration.between(start, end));
 
         System.out.println("Average age: " + averageAge);
         System.out.println("Maximum age: " + maxAge);
