@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements  Comparable<Person> {
     private String firstName;
     private String lastName;
     private int age;
@@ -24,5 +24,15 @@ public class Person {
     @Override
     public String toString() {
         return firstName + " " + lastName + ", age " + age;
+    }
+
+    @Override
+    public int compareTo(Person that) {
+        if(this.getAge() == that.getAge())
+            return 0;
+        else if(this.getAge() < that.getAge())
+            return -1;
+        else
+            return 1;
     }
 }
